@@ -1,1 +1,62 @@
 
+#lista de productos#
+agua     =600
+azúcar   =1200
+aceite   =1500
+arroz    =1250
+fideos   =790
+bebida   =1780
+chocolate=2500
+pan_molde=1340
+
+contador=0
+productos=[]
+p1=input('quiere quiere llevar agua?')
+if p1 == 'si':
+    c=int(input('cuanto?'))
+    contador=contador+(agua*c)
+    productos.append(f'agua: {agua}*{c}')
+
+p2=input('quiere quiere llevar azúcar?')
+if p2 == 'si':
+    c=int(input('cuanto?'))
+    contador=contador+(azúcar*c)
+    productos.append(f'azúcar: {azúcar}*{c}')
+
+p3=input('quiere quiere llevar aceite?')
+if p3 == 'si':
+    c=int(input('cuanto?'))
+    contador=contador+(aceite*c)
+    productos.append(f'aceite: {aceite}*{c}')    
+p4=input('quiere quiere llevar arroz?')
+
+if p4 == 'si':
+    c=int(input('cuanto?'))
+    contador=contador+(arroz*c)
+    productos.append(f'arroz: {arroz}*{c}')
+
+p5=input('quiere quiere llevar fideos?')
+if p5 == 'si':
+    c=int(input('cuanto?'))
+    contador=contador+(fideos*c)
+    productos.append(f'fideos: {fideos}*{c}')
+
+p6=input('quiere quiere llevar bebida?')
+if p6 == 'si':
+    c=int(input('cuanto?'))
+    contador=contador+(bebida*c)
+    productos.append(f'bebida: {bebida}*{c}')
+
+p7=input('quiere quiere llevar chocolate?')
+if p7 == 'si':
+    c=int(input('cuanto?'))
+    contador=contador+(chocolate*c)
+    productos.append(f'chocolate: {chocolate}*{c}')
+
+p8=input('quiere quiere llevar pan_molde?')
+if p8 == 'si':
+    c=int(input('cuanto?'))
+    contador=contador+(pan_molde*c)
+    productos.append(f'pan_molde: {pan_molde}*{c}')
+
+print(f'usted lleva {productos} y su total es: {contador}')
